@@ -1,0 +1,1 @@
+export const ActivityFeed = () => <div>Activity Feed</div>;

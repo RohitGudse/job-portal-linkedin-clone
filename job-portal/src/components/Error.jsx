@@ -1,0 +1,1 @@
+export const Error = () => <p>Error occurred</p>;
