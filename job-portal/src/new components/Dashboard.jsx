@@ -4,16 +4,18 @@ import JobStatsCard from "../components/dashboard/JobStatsCard";
 import ActivityFeed from "../components/dashboard/ActivityFeed";
 
 const Dashboard = () => {
+  const jobStats = {
+    title: "Total Jobs",
+    count: 120,
+    icon: "💼",
+  };
+
   return (
-    <div className="grid gap-5">
-      <JobStatsCard
-        title="Total Jobs"
-        count="120"
-        icon="💼"
-      />
+    <main className="grid gap-5">
+      <JobStatsCard {...jobStats} />
 
       <ActivityFeed />
-    </div>
+    </main>
   );
 };
 
